@@ -1,0 +1,418 @@
+/* default css */
+@font-face {
+  font-family: "Gilroy";
+  src: url("./Gilroy-ExtraBold.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", "sans-serif";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+}
+/* default css */
+
+/* navbar started */
+
+.nav {
+  height: 80px;
+  width: 100%;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+
+.nav h1 {
+  padding-left: 130px;
+}
+
+.menus {
+  display: flex;
+  gap: 50px;
+}
+
+.menus h3 a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.7s ease;
+}
+
+.menus h3 a:hover {
+  border-bottom: 3px solid white;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.light-mode .menus h3 a {
+  background-color: white;
+  color: black;
+  border-bottom: 3px solid transparent;
+}
+
+.light-mode .menus h3 a:hover {
+  border-bottom: 3px solid black;
+}
+/* navbar completed */
+
+/* home started */
+
+.home {
+  height: 630px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+.myImage {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin-top: 50px;
+}
+
+.line1 {
+  margin-top: 30px;
+  font-size: 25px;
+  text-align: center;
+}
+.line2 {
+  font-size: 40px;
+  text-align: center;
+}
+.line3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.mybtn {
+  height: 50px;
+  width: 150px;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding-left: 25px;
+  padding-top: 12px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.mybtn:hover {
+  height: 55px;
+  width: 155px;
+  font-size: 23px;
+}
+
+.light-mode .home img {
+  border: 1px solid black;
+}
+
+.light-mode .mybtn {
+  background-color: black;
+  color: white;
+}
+
+/* home completed */
+
+/* projects started */
+
+.projects {
+  height: 605px;
+  width: 100%;
+  text-align: center;
+}
+
+.project-heading {
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  height: 480px;
+  width: 370px;
+  margin-top: 25px;
+  border-radius: 20px;
+  border: 3px solid white;
+}
+
+.project-icons {
+  height: 200px;
+  width: 85%;
+  margin-top: 75px;
+  border-radius: 25px;
+}
+
+.box .project-title {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.box a {
+  color: rgb(160, 141, 117);
+}
+
+.box a:hover {
+  color: rgb(60, 141, 173);
+}
+
+.light-mode .projects {
+  background-color: white;
+}
+
+.light-mode .box {
+  border: 3px solid black;
+}
+
+.light-mode .box .project-icons {
+  border: 1px solid black;
+}
+
+/* projects completed */
+
+/* skills started */
+
+.skills {
+  height: 550px;
+  width: 100%;
+}
+
+.skills .skills-heading {
+  font-size: 40px;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.skills .skills-images {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills .skills-images img {
+  height: 110px;
+  width: 110px;
+  margin-left: 8px;
+  border-radius: 20px;
+}
+
+.skills .skills-images img:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.1);
+}
+
+.skills .skills-images h2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 207px;
+}
+
+.light-mode .skills {
+  background-color: white;
+}
+
+/* skills completed */
+
+/* contactus started */
+
+.contactus {
+  height: 450px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 50px;
+}
+
+.contactus .contactus-heading {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contactus .name {
+  display: flex;
+  align-items: center;
+}
+
+.contactus .name-input {
+  height: 43px;
+  width: 225px;
+  border-radius: 8px;
+  border: none;
+  padding-left: 6px;
+  margin-left: 73px;
+}
+
+.contactus .email {
+  display: flex;
+  align-items: center;
+}
+
+.contactus .email-input {
+  height: 43px;
+  width: 225px;
+  border-radius: 8px;
+  border: none;
+  padding-left: 6px;
+  margin-left: 73px;
+}
+
+.contactus .description {
+  display: flex;
+  align-items: center;
+}
+
+.contactus .description-input {
+  height: 70px;
+  width: 225px;
+  border-radius: 8px;
+  border: none;
+  padding-left: 7px;
+  padding-top: 25px;
+  margin-left: 25px;
+}
+
+.btnSubmit {
+  height: 40px;
+  width: 120px;
+  font-size: 17px;
+  margin-left: 120px;
+  margin-top: 10px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnSubmit:hover {
+  height: 45px;
+  width: 130px;
+}
+
+.light-mode .contactus {
+  background-color: white;
+  color: black;
+}
+
+.light-mode .name-input {
+  border: 2px solid black;
+}
+
+.light-mode .email-input {
+  border: 2px solid black;
+}
+
+.light-mode .description-input {
+  border: 2px solid black;
+}
+
+.light-mode .btnSubmit {
+  border: 2px solid black;
+}
+
+/* contactus completed */
+
+/* footer started */
+
+.author {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.footer {
+  height: 200px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  height: 70px;
+  width: 70px;
+  background-color: #f5f6fa;
+  border-radius: 50px;
+  text-align: center;
+  margin: 10px;
+  line-height: 78px;
+  box-shadow: 1px 4px 2px 2px #dcdde1;
+}
+
+.footer a i {
+  font-size: 25px;
+  transition: all 0.3s linear;
+}
+
+.footer a:hover i {
+  transform: scale(1.4);
+}
+
+.fa-linkedin {
+  color: #0a66c2;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-instagram {
+  color: #e1306c;
+}
+
+.fa-github {
+  color: #2b3137;
+}
+
+.light-mode .author {
+  background-color: white;
+  color: black;
+}
+
+.light-mode footer {
+  background-color: white;
+  color: black;
+}
+
+.light-mode footer a {
+  border: 1px solid black;
+}
+
+/* footer completed */
